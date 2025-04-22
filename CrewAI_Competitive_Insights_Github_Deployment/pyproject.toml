@@ -1,0 +1,25 @@
+[project]
+name = "Competitive_insights_generator"
+version = "0.1.0"
+description = "similar-company-finder-template using crewAI"
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.76.2",
+    "langchain-core>=0.2.30",
+]
+
+[project.scripts]
+Competitive_insights_generator = "Competitive_insights_generator.main:run"
+run_crew = "Competitive_insights_generator.main:run"
+train = "Competitive_insights_generator.main:train"
+replay = "Competitive_insights_generator.main:replay"
+test = "Competitive_insights_generator.main:test"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
